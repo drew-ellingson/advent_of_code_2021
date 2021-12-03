@@ -16,12 +16,9 @@ def filter_val(nums, pos, criteria="max"):
     vals = [num[pos] for num in nums]
     hist = Counter(vals)
 
-    if criteria == "max":
-        common = [i for i, x in hist.items() if x == max(hist.values())]
-        default = "1"
-    else:
-        common = [i for i, x in hist.items() if x == min(hist.values())]
-        default = "0"
+    func = max if criteria == "max" else min
+    default = "1" if criteria == "max" else "0"
+    common = [i for i, x in hist.items() if x == func(hist.values())]
 
     return default if len(common) > 1 else common[0]
 
