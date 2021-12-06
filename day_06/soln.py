@@ -34,7 +34,7 @@ print(f"P1 Soln: {len(fishes)}")
 
 
 def fish_sum(fish, days):
-    """recursively find # of fish added by a single `fish` and it's ancestors over `days`."""
+    """recursively find # of fish added by a single `fish` and it's descendants over `days`."""
     if days <= fish:
         return 1
     else:
