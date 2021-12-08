@@ -4,3 +4,4 @@ env/
 # templates and scripts for boilerplate
 base_soln.py
 setup.sh
+aoc_session_cookie
