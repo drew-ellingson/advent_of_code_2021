@@ -16,16 +16,17 @@ class Grid:
     def get_neighbor_adds(self, point):
         i, j = point
         deltas = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        neighbors = []
-        for z, w in deltas:
-            if (
+        neighbors = [
+            (i + z, j + w)
+            for (z, w) in deltas
+            if not (
                 i + z < 0
                 or i + z >= len(self.grid)
                 or j + w < 0
                 or j + w >= len(self.grid[i])
-            ):
-                continue
-            neighbors.append((i + z, j + w))
+            )
+        ]
+
         return neighbors
 
     def get_neighbor_vals(self, point):
