@@ -1,3 +1,5 @@
+# python soln.py  0.09s user 0.02s system 70% cpu 0.161 total
+
 import itertools
 
 # ---------------- Class Setup ----------------------
