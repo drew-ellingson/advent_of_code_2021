@@ -5,3 +5,4 @@ This repo contains solutions for [advent of code 2021](https://adventofcode.com/
 ### Particular Favorites:
 
 [Day 5 - Hydrothermal Vents](day_05/)
+[Day 11 - Octopus Flashing Lights](day_11/)
