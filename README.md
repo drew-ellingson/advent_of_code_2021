@@ -6,3 +6,4 @@ This repo contains solutions for [advent of code 2021](https://adventofcode.com/
 
 [Day 5 - Hydrothermal Vents](day_05/)
 [Day 11 - Octopus Flashing Lights](day_11/)
+[Day 14 - Polymer Insertion Counts](day_14/)
