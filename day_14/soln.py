@@ -36,7 +36,7 @@ print(f"P1 Answer: {get_answer(many_step(start, reps, 10))}")
 
 
 def fancy_step(pair_hist, reps):
-    """track tuple counts across polymer insertions"""
+    """track bigram counts across polymer insertions"""
 
     new_pair_hist = copy.deepcopy(pair_hist)
     for k, v in pair_hist.items():
@@ -53,7 +53,7 @@ def many_fancy_step(pair_hist, reps, steps):
 
 
 def count_occ(pair_hist, char, bound_chars):
-    """translate from tuple counts to total character counts, accounting for end chars"""
+    """translate from bigram counts to total character counts, accounting for end chars"""
 
     # 'CC' gets counted differently than 'CB'
     total_occ = sum(k.count(char) * v for k, v in pair_hist.items() if char in k)
