@@ -1,6 +1,7 @@
+# python day_18/soln.py  5.17s user 0.03s system 99% cpu 5.234 total
+
 import json
 import math
-import itertools
 
 # -------------------- Class Definitions ----------------------
 
@@ -49,7 +50,6 @@ class SnailNum:
                 depth -= 1
             elif depth > 4:
                 explode = True
-                explode_idx = i
                 if self.str_rep[i + 1] in nums:  # account for 2 digit nums
                     left = int(self.str_rep[i : i + 2])
                     left_dd = True
