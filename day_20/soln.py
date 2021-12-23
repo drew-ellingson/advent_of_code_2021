@@ -2,7 +2,7 @@
 
 import itertools
 
-# -------------------- Read File ----------------------
+# -------------------- Class Setup ----------------------
 
 
 def _add(tup1, tup2):
@@ -112,10 +112,10 @@ enhance_image = EnhanceImage(alg, ons)
 
 enhance_image.enhance_many(2)
 
-print(len(enhance_image.ons))
+print(f'P1 Soln: {len(enhance_image.ons)}')
 
 # -------------------- P2 -----------------------------
 
 enhance_image.enhance_many(48)
 
-print(len(enhance_image.ons))
+print(f'P2 Soln: {len(enhance_image.ons)}')
